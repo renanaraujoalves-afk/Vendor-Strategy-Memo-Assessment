@@ -1,46 +1,26 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Act as **VP of Operations** for an acquired company. Analyze ~400 vendors (12-month spend) and produce C-suite cost-saving recommendations.
 
-## Project Purpose
+## Key References
 
-This is a **Vendor Strategy Memo Assessment** project. The goal is to act as VP of Operations for an acquired company, analyze ~400 vendors and their last 12 months of spend, and produce a C-suite executive memo with cost-saving recommendations.
-
-### Deliverables
-1. **Vendor Analysis** — Classify each vendor by Department, add a 1-line description, and assign a recommendation: `Terminate`, `Consolidate`, or `Optimize`.
-2. **Top 3 Opportunities** — The three highest-impact savings opportunities with title, explanation, and estimated annual savings.
-3. **Methodology** — Approach, tools, prompts, and quality-check evidence.
-4. **Executive Memo** — 1-page C-suite memo (CEO/CFO) with findings, savings, timeline, implementation, and risks.
-
-## Key Files
-
-| File | Purpose |
+| Path | Purpose |
 |---|---|
-| `inputs/Vendor Analysis Assessment.csv` | Source data: ~400 vendors with 12-month spend |
-| `inputs/Config.csv` | Valid department names to use for classification |
-| `outputs/` | Generated outputs go here |
-| `scripts/` | Scripts used for processing go here |
-| `tasks/Assignment.md` | Full task brief |
+| `tasks/Assignment.md` | Full task brief and evaluation criteria |
+| `inputs/Vendor Analysis Assessment.csv` | Source vendor data |
+| `inputs/Config.csv` | Valid department names (use only these) |
+| `outputs/` | All generated outputs |
+| `scripts/` | Processing scripts |
 
-## Department Classifications
+## Workflow Skills (slash commands)
 
-Use only the departments from `inputs/Config.csv`
-
-## Skills Available
-
-### `/executive-briefing`
-Use when writing the executive memo. Follow the BLUF (Bottom Line Up Front) format defined in `.claude/skills/executive-briefing/SKILL.md`.
-
-### `/docx` (document creation)
-Use when exporting the executive memo to `.docx`. See `.claude/skills/docx/SKILL.md` for the full workflow
-
-## Evaluation Criteria
-
-The submission is evaluated on:
-- Accurate department classification
-- Concise, specific vendor descriptions (not generic like "business services provider")
-- Realistic and strategic recommendations with risk factors
-- Top 3 opportunities that are financially justified and significant enough for a ~$1B business
-- Documented methodology and quality-check evidence
-- Executive memo: clear formatting, no errors, actionable savings
-- Well-organized project folder with inputs, outputs, scripts, and a README
+| Command | When to use |
+|---|---|
+| `/step1-categorize_vendors` | Classify vendors by department + 1-line description |
+| `/step2-validate_vendors_categorization` | Validate categorization output |
+| `/step3-recommend_actions_on_vendors` | Assign Terminate / Consolidate / Optimize |
+| `/step4-audit_vendor_data_analysis` | Audit sample for human review |
+| `/step5-recommend_3_opportunities` | Identify top 3 savings opportunities |
+| `/step6-generate_executive_memo` | Draft the C-suite executive memo |
+| `/executive-briefing` | Format memo in BLUF style |
+| `/docx` | Export memo to `.docx` |
