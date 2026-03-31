@@ -3,7 +3,7 @@
 Run the audit script to surface the top 5% vendors by spend and a random 5% sample for manual review.
 
 ```bash
-python scripts/step4_audit.py
+python scripts/step4_audit_vendor_data_analysis.py
 ```
 
 The script will:

@@ -66,4 +66,3 @@ _Total Estimated Annual Savings: $X,XXX,XXX_
 1. Confirm `outputs/top3_opportunities.md` was created
 2. Display the full contents of the file to the user
 3. Summarize the three opportunities in one sentence each, and state the total combined estimated savings
-4. Tell the user to run `/executive-briefing` next for Part 4

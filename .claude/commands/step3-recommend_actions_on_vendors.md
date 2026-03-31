@@ -14,7 +14,7 @@ Run the recommendation script to assign Terminate / Consolidate / Optimize to ea
 - Duplicate SaaS tools in same category → Consolidate (smaller spend vendor flagged first)
 
 ```bash
-python scripts/step3_recommend.py
+python scripts/step3_recommend_actions_on_vendors.py
 ```
 
 After the script completes:
@@ -22,4 +22,4 @@ After the script completes:
 2. Highlight the top 5 Terminate candidates (lowest spend, clearest rationale)
 3. Highlight the top 3 Consolidate opportunities (highest combined savings potential)
 4. Note any vendors with "uncertain" or weak rationale that may need manual review
-5. Tell the user to run `/step4-audit` next
+5. Tell the user to run `/step4-audit_vendor_data_analysis` next
