@@ -35,6 +35,7 @@ For each vendor in the list, complete the following:
 •	Consolidate – Multiple vendors serve the same function and should be streamlined.
 •	Optimize – Useful vendor, but opportunity exists to reduce cost or usage.
 ⚠️ This is not a manual data-entry task. Please use Claude Code to generate and refine your outputs. We will not accept submissions from other AI tools or from claude.ai. The work must be done using the Claude Code CLI. Please include a README file that explains how you did everything.
+
 Part 2: Identify Strategic Opportunities
 
 In the Top 3 Opportunities tab, outline:
