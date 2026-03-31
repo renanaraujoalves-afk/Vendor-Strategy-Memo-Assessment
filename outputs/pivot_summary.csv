@@ -1,0 +1,15 @@
+Department,Vendor Count,Total Spend (USD),% of Total
+Sales,5,"$3,156,661",40.0%
+Facilities,122,"$1,216,417",15.4%
+G&A,83,"$1,101,045",14.0%
+Finance,25,"$750,708",9.5%
+Engineering,54,"$717,791",9.1%
+Marketing,38,"$269,473",3.4%
+Professional Services,19,"$228,261",2.9%
+Legal,25,"$185,483",2.4%
+M&A,3,"$109,854",1.4%
+Product,5,"$77,092",1.0%
+UNCLASSIFIED,3,"$56,079",0.7%
+SaaS,3,"$18,317",0.2%
+Support,1,$178,0.0%
+TOTAL,386,"$7,887,359",100.0%

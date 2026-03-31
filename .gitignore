@@ -1,0 +1,12 @@
+# Claude Code Personal Settings
+.claude/settings.local.json
+.claude/commands/personal/
+
+# Local Task Notes / Scratchpads
+.claude/tasks/
+*.local.tasks
+
+# Sensitive Information
+.env
+.env.local
+*.secret
